@@ -28,6 +28,7 @@
     </a>
 </div>
 
+<div align="center">
 <table><thead>
   <tr>
     <th rowspan="2"></th>
@@ -71,3 +72,4 @@
   </tr>
 </tbody>
 </table>
+</div>
