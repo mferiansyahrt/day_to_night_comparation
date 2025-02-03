@@ -8,4 +8,10 @@
     </a>
 </div>
 
+<div align="center">
+    <a href="./">
+        <img src="./figure/syn_image2.png" width="79%"/>
+    </a>
+</div>
+
 ## Deep Learning Approach
