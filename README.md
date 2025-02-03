@@ -18,12 +18,12 @@
 
 <div align="center">
     <a href="./">
-        <img src="./figure/edgefeatureGAN.png" width="79%"/>
+        <img src="./figure/edgefeatureGAN.png" width="65%"/>
     </a>
 </div>
 
 <div align="center">
     <a href="./">
-        <img src="./figure/FIG411.png" width="79%"/>
+        <img src="./figure/FIG411.png" width="65%"/>
     </a>
 </div>
