@@ -28,56 +28,46 @@
     </a>
 </div>
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-</style>
-<table class="tg"><thead>
+<table><thead>
   <tr>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
+    <th rowspan="2"></th>
+    <th colspan="2">FID</th>
+    <th colspan="2">SSIM</th>
+  </tr>
+  <tr>
+    <th>Train</th>
+    <th>Test</th>
+    <th>Train</th>
+    <th>Test</th>
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td>Vanilla CycleGAN</td>
+    <td>35,61</td>
+    <td>62,54</td>
+    <td>0,44</td>
+    <td>0,38</td>
   </tr>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td>FPN-CycleGAN</td>
+    <td>71,64</td>
+    <td>104,46</td>
+    <td>0,48</td>
+    <td>0,44</td>
   </tr>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td>UVCGAN</td>
+    <td>13,67</td>
+    <td>16,68</td>
+    <td>0,49</td>
+    <td>0,42</td>
   </tr>
   <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
+    <td>UVCGAN with Edge Feature Loss</td>
+    <td>21,83</td>
+    <td>47,79</td>
+    <td>0,45</td>
+    <td>0,40</td>
   </tr>
-  <tr>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-    <td class="tg-0pky"></td>
-  </tr>
-</tbody></table>
+</tbody>
+</table>
