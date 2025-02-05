@@ -34,6 +34,39 @@ we used the synthetic nighttime dataset. For unpaired data, we use the BDD
 dataset. This results in 70 paired images and 100 unpaired images, respectively, for
 utilizing semi-supervised CycleGAN.
 
+### Generator Variation
+Several deep learning CycleGAN model is built with different generator architectures to see how well
+it performs on generating nighttime images. In this study we compare 4 different CycleGAN architectures, i.e.,
+original CycleGAN, FPN-CycleGAN, and UVCGAN. Additionally, we also introduce a new combination of
+UVCGAN with edge feature loss that will be explained later. All compared architectures are shown below.
+
+<div align="center">
+<table><thead>
+  <tr>
+    <th>CycleGAN</th>
+    <th>Generator</th>
+  </tr></thead>
+<tbody>
+  <tr>
+    <td>Original CycleGAN</td>
+    <td>Base generator (UNet)</td>
+  </tr>
+  <tr>
+    <td>FPN-CycleGAN </td>
+    <td>Feature Pyramid Network (FPN)</td>
+  </tr>
+  <tr>
+    <td>UVCGAN </td>
+    <td>UNet-Vision Transformer (UNet-ViT)</td>
+  </tr>
+  <tr>
+    <td>UVCGAN with Edge Feature Loss</td>
+    <td>UNet-Vision Transformer (UNet-ViT)</td>
+  </tr>
+</tbody>
+</table>
+</div>
+
 <div align="center">
     <a href="./">
         <img src="./figure/syn_dataset.png" width="65%"/>
