@@ -1,5 +1,9 @@
 # day_to_night_comparation
 
+The dataset used on Image Processing Approach comes from [Day-to-Night Image Synthesis for Training Nighttime Neural ISPs](https://openaccess.thecvf.com/content/CVPR2022/papers/Punnappurath_Day-to-Night_Image_Synthesis_for_Training_Nighttime_Neural_ISPs_CVPR_2022_paper.pdf). For further infromation, please read the details on paper. 
+
+The dataset used on Deep Learning Approach comes from Berkley Deep Drive (BDD Dataset) [BDD100K: A Diverse Driving Dataset for Heterogeneous Multitask Learning](https://arxiv.org/pdf/1805.04687).
+
 ## Image Processing Approach
 
 The synthetic images are generated using a framework of two steps, i.e., the Synthetic Nighttime Image Generation step and Nighttime Image Enhancement step. This two-step framework is illustrated below The Synthetic Nighttime Image Generation step models a lower exposure and generates a corresponding dark image. The output of this step becomes the input for the Nighttime Image Enhancement step. The Nighttime Image Enhancement step improves the nighttime quality of the overall image.
