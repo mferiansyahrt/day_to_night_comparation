@@ -75,11 +75,17 @@ To enhance the structural quality on the generated nighttime image of the origin
     </a>
 </div>
 
+### Results
+
+After training the model on the proposed datasets, several sample images were tested. The nighttime images produced using traditional image processing methods did not effectively replicate a true nighttime appearance due to variations in illumination. This inconsistency made it difficult for the model to learn stable characteristics of nighttime lighting. In contrast, the nighttime images generated from the BDD dataset appeared more realistic. This improvement was likely due to the dataset containing unpaired data, where nighttime images were captured directly by a camera rather than being artificially generated. The results of synthetic nighttime image generation using different CycleGAN generators are presented.
+
 <div align="center">
     <a href="./">
         <img src="./figure/FIG411.png" width="65%"/>
     </a>
 </div>
+
+All models generated nighttime-like images except for FPN-CycleGAN, which showed inconsistent results and the highest FID score, indicating poor quality. UVCGAN with the UNet-ViT generator performed best, achieving the most realistic nighttime images and superior training scores. Although adding edge feature loss to UVCGAN aimed to enhance structural quality, it slightly worsened performance due to added complexity. Overall, UVCGAN proved the most effective for generating high-quality nighttime images. The score of training and testing on each mdoel is shown below.
 
 <div align="center">
 <table><thead>
