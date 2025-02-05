@@ -2,7 +2,7 @@
 
 ## Image Processing Approach
 
-<p>The synthetic images are generated using a framework of two steps, i.e., the Synthetic Nighttime Image Generation step and Nighttime Image Enhancement step. This two-step framework is illustrated below The Synthetic Nighttime Image Generation step models a lower exposure and generates a corresponding dark image. The output of this step becomes the input for the Nighttime Image Enhancement step. The Nighttime Image Enhancement step improves the nighttime quality of the overall image.</p>
+The synthetic images are generated using a framework of two steps, i.e., the Synthetic Nighttime Image Generation step and Nighttime Image Enhancement step. This two-step framework is illustrated below The Synthetic Nighttime Image Generation step models a lower exposure and generates a corresponding dark image. The output of this step becomes the input for the Nighttime Image Enhancement step. The Nighttime Image Enhancement step improves the nighttime quality of the overall image.
 
 <div align="center">
     <a href="./">
