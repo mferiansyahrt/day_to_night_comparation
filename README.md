@@ -4,17 +4,14 @@
 
 The synthetic images are generated using a framework of two steps, i.e., the Synthetic Nighttime Image Generation step and Nighttime Image Enhancement step. This two-step framework is illustrated below The Synthetic Nighttime Image Generation step models a lower exposure and generates a corresponding dark image. The output of this step becomes the input for the Nighttime Image Enhancement step. The Nighttime Image Enhancement step improves the nighttime quality of the overall image.
 
+The Synthetic Nighttime Image framework is inspired from [Day-to-Night Image Synthesis for Training Nighttime Neural ISPs]([https://arxiv.org/abs/2207.02696](https://openaccess.thecvf.com/content/CVPR2022/papers/Punnappurath_Day-to-Night_Image_Synthesis_for_Training_Nighttime_Neural_ISPs_CVPR_2022_paper.pdf). While the Nighttime Image Enhancement framework is inspired from [Back to the future: a night photography rendering ISP without deep learning]([https://arxiv.org/abs/2207.02696](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Zini_Back_to_the_Future_A_Night_Photography_Rendering_ISP_Without_CVPRW_2023_paper.pdf). 
+
+
 <div align="center">
     <a href="./">
         <img src="./figure/rev_framework.png" width="79%"/>
     </a>
 </div>
-
-<body>
-    <p>
-        The results of our synthetic nighttime image is shown below. To ensure the results of the generated dataset is satisfactory, we evaluate each generated image using No-Reference             Image Quality Assessment (NR-IQA) metrics, i.e. Fr´echet Inception Distance (FID) and Structural Similarity Index Measure (SSIM) score. Each of these metrics aim to objectively             score the image quality. The modified relighting image is illuminated by ambient background and randomize night illumination. Hence resulting different night illumination on                specific output. The local lights from are fixed, and the artificial light does not look visually pleasing. Later, it will affect the CycleGAN mapping function. We use only the             modified relighting image output for the synthetic nighttime dataset, as the other output type makes the image appear too blue and unnatural. Furthermore, it is quantitatively              proven that the modified relighting image has better quality compared to the other images. For the modified relighting image, the FID and SSIM scores are 5.2 and 0.4,                       respectively. Meanwhile, the contrast enhancement image has the second-best quality, with FID and SSIM scores of 6.7 and 0.3, respectively.
-    </p>
-</body>
 
 The results of our synthetic nighttime image is shown below. To ensure the results of the generated dataset is satisfactory, we evaluate each generated image using No-Reference Image Quality Assessment (NR-IQA) metrics, i.e. Fr´echet Inception Distance (FID) and Structural Similarity Index Measure (SSIM) score. Each of these metrics aim to objectively score the image quality. The modified relighting image is illuminated by ambient background and randomize night illumination. Hence resulting different night illumination on specific output. The local lights from are fixed, and the artificial light does not look visually pleasing. Later, it will affect the CycleGAN mapping function. We use only the modified relighting image output for the synthetic nighttime dataset, as the other output type makes the image appear too blue and unnatural. Furthermore, it is quantitatively proven that the modified relighting image has better quality compared to the other images. For the modified relighting image, the FID and SSIM scores are 5.2 and 0.4, respectively. Meanwhile, the contrast enhancement image has the second-best quality, with FID and SSIM scores of 6.7 and 0.3, respectively.
 
