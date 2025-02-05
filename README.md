@@ -27,6 +27,19 @@ The results of our synthetic nighttime image is shown below. To ensure the resul
 
 ## Deep Learning Approach
 
+### Dataset
+The experimental design of this research consists of performing deep image-to-image translation using
+a semi-supervised CycleGAN. Semi-supervised GAN usesboth paired and unpaired images. For paired data,
+we used the synthetic nighttime dataset. For unpaired data, we use the BDD
+dataset. This results in 70 paired images and 100 unpaired images, respectively, for
+utilizing semi-supervised CycleGAN.
+
+<div align="center">
+    <a href="./">
+        <img src="./figure/syn_dataset.png" width="65%"/>
+    </a>
+</div>
+
 <div align="center">
     <a href="./">
         <img src="./figure/edgefeatureGAN.png" width="65%"/>
