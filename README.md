@@ -28,17 +28,16 @@ The results of our synthetic nighttime image is shown below. To ensure the resul
 ## Deep Learning Approach
 
 ### Dataset
-The experimental design of this research consists of performing deep image-to-image translation using
-a semi-supervised CycleGAN. Semi-supervised GAN usesboth paired and unpaired images. For paired data,
-we used the synthetic nighttime dataset. For unpaired data, we use the BDD
-dataset. This results in 70 paired images and 100 unpaired images, respectively, for
-utilizing semi-supervised CycleGAN.
+The experimental design of this research consists of performing deep image-to-image translation using a semi-supervised CycleGAN. Semi-supervised GAN usesboth paired and unpaired images. For paired data, we used the synthetic nighttime dataset. For unpaired data, we use the BDD dataset. This results in 70 paired images and 100 unpaired images, respectively, for utilizing semi-supervised CycleGAN.
+
+<div align="center">
+    <a href="./">
+        <img src="./figure/syn_dataset.png" width="65%"/>
+    </a>
+</div>
 
 ### Generator Variation
-Several deep learning CycleGAN model is built with different generator architectures to see how well
-it performs on generating nighttime images. In this study we compare 4 different CycleGAN architectures, i.e.,
-original CycleGAN, FPN-CycleGAN, and UVCGAN. Additionally, we also introduce a new combination of
-UVCGAN with edge feature loss that will be explained later. All compared architectures are shown below.
+Several deep learning CycleGAN model is built with different generator architectures to see how well it performs on generating nighttime images. In this study we compare 4 different CycleGAN architectures, i.e., original CycleGAN, FPN-CycleGAN, and UVCGAN. Additionally, we also introduce a new combination of UVCGAN with edge feature loss that will be explained later. All compared architectures are shown below.
 
 <div align="center">
 <table><thead>
@@ -67,11 +66,8 @@ UVCGAN with edge feature loss that will be explained later. All compared archite
 </table>
 </div>
 
-<div align="center">
-    <a href="./">
-        <img src="./figure/syn_dataset.png" width="65%"/>
-    </a>
-</div>
+### Modified UVCGAN with Edge Feature Loss
+To enhance the structural quality on the generated nighttime image of the original UVCGAN, we attempt to define loss using edge data. This edge data is computed using the Canny operator. A UNet model denoted by Ef on Figure below is fixed and obtain the edge feature to generate a proper nighttime image.
 
 <div align="center">
     <a href="./">
