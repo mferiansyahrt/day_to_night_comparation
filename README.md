@@ -10,7 +10,6 @@ The synthetic images are generated using a framework of two steps, i.e., the Syn
 
 The Synthetic Nighttime Image framework is inspired from [Day-to-Night Image Synthesis for Training Nighttime Neural ISPs](https://openaccess.thecvf.com/content/CVPR2022/papers/Punnappurath_Day-to-Night_Image_Synthesis_for_Training_Nighttime_Neural_ISPs_CVPR_2022_paper.pdf). While the Nighttime Image Enhancement framework is inspired from [Back to the future: a night photography rendering ISP without deep learning](https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/papers/Zini_Back_to_the_Future_A_Night_Photography_Rendering_ISP_Without_CVPRW_2023_paper.pdf). 
 
-
 <div align="center">
     <a href="./">
         <img src="./figure/rev_framework.png" width="79%"/>
